@@ -21,11 +21,11 @@ struct Hit: Codable {
 
 struct Recipe: Codable {
     let image: String
-    let title: String
+    var title: String
     let source: String
     let url: String
     let healthLabels: [String]
-    let ingredientLines: [String]
+    var ingredientLines: [String]
     
     enum CodingKeys: String, CodingKey {
         case image

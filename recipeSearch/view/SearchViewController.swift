@@ -13,18 +13,16 @@ class SearchViewController: UIViewController {
     private var recipes: [Hit] = []
     private var query:String? = nil
     private let searchController = UISearchController()
-    private var currentSelectedHealthFilterBtn: UIButton!
+    private(set) var currentSelectedHealthFilterBtn: UIButton!
     private let defaults = UserDefaults.standard
     private var recentSearchs: [String] = []
-    @IBOutlet private weak var all: UIButton!
-    @IBOutlet private weak var low: UIButton!
-    @IBOutlet private weak var keto: UIButton!
-    @IBOutlet private weak var vegan: UIButton!
-    @IBOutlet weak var recentTableView: UITableView!
-    @IBOutlet private weak var recipesTableView: UITableView!
-    @IBOutlet weak var noDataFound: UIStackView!
-    @IBOutlet weak var exploreView: UIStackView!
-    @IBOutlet weak var healthFiltersView: UIScrollView!
+    @IBOutlet private(set) weak var all: UIButton!
+    @IBOutlet private(set) weak var low: UIButton!
+    @IBOutlet private(set) weak var keto: UIButton!
+    @IBOutlet private(set) weak var vegan: UIButton!
+    @IBOutlet private(set) weak var recentTableView: UITableView!
+    @IBOutlet private(set) weak var recipesTableView: UITableView!
+    @IBOutlet private(set) weak var healthFiltersView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +51,7 @@ class SearchViewController: UIViewController {
     
     func onFailUpdateView(){
         recipesTableView.isHidden = true
-        exploreView.isHidden = true
-        noDataFound.isHidden = false
+        showErorrAlert()
     }
     
     @IBAction func allBtn(_ sender: Any) {
@@ -73,7 +70,7 @@ class SearchViewController: UIViewController {
         switchHealthFilterBtn(selectedHealtFilterBtn: vegan, selectedHealtFilterValue: HealthFilters.VEGAN)
     }
    
-    private func switchHealthFilterBtn(selectedHealtFilterBtn: UIButton, selectedHealtFilterValue: String) {
+     func switchHealthFilterBtn(selectedHealtFilterBtn: UIButton, selectedHealtFilterValue: String) {
         if currentSelectedHealthFilterBtn != selectedHealtFilterBtn {
             defaults.set(selectedHealtFilterValue, forKey: "healthFilter")
             currentSelectedHealthFilterBtn.backgroundColor = .systemGray3
@@ -83,6 +80,18 @@ class SearchViewController: UIViewController {
                 searchViewModel.fetchAllRecipes(q: query ?? "", healthFilter: selectedHealtFilterValue)
             }
         }
+    }
+    
+    func showErorrAlert() {
+        let alert = UIAlertController(title: "error", message: "can't load data check internet connection", preferredStyle: .alert)
+                
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            print(">> Ok")
+        }
+        
+        alert.addAction(okAction)
+        alert.preferredAction = okAction
+        present(alert, animated: true)
     }
 }
 

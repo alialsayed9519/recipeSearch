@@ -20,9 +20,17 @@
 		41860D9A28A285F300BF92EC /* recipeSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41860D9828A285F300BF92EC /* recipeSearch.xcdatamodeld */; };
 		41860D9C28A285F700BF92EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41860D9B28A285F700BF92EC /* Assets.xcassets */; };
 		41860D9F28A285F700BF92EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41860D9D28A285F700BF92EC /* LaunchScreen.storyboard */; };
-		41860DAA28A285F700BF92EC /* recipeSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41860DA928A285F700BF92EC /* recipeSearchTests.swift */; };
 		41860DB428A285F700BF92EC /* recipeSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41860DB328A285F700BF92EC /* recipeSearchUITests.swift */; };
 		41860DB628A285F700BF92EC /* recipeSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41860DB528A285F700BF92EC /* recipeSearchUITestsLaunchTests.swift */; };
+		419B2192297CA9F70068838E /* DetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B2191297CA9F70068838E /* DetailsViewControllerTests.swift */; };
+		41AC69A3297CB74000D6FAA6 /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AC69A2297CB74000D6FAA6 /* SearchViewControllerTests.swift */; };
+		41AC69A5297CBB3900D6FAA6 /* RecipeTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AC69A4297CBB3900D6FAA6 /* RecipeTableViewCellTests.swift */; };
+		41AC69E7297CC71300D6FAA6 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AC69E6297CC71300D6FAA6 /* TestHelper.swift */; };
+		41AC6A53297D818200D6FAA6 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 41AC6A4F297D818200D6FAA6 /* CHANGELOG.md */; };
+		41AC6A54297D818200D6FAA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41AC6A50297D818200D6FAA6 /* README.md */; };
+		41AC6A55297D818200D6FAA6 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AC6A51297D818200D6FAA6 /* ViewControllerPresentationSpy.xcframework */; };
+		41AC6A56297D818200D6FAA6 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 41AC6A52297D818200D6FAA6 /* LICENSE.txt */; };
+		41AC6A58297D82D400D6FAA6 /* ViewControllerPresentationSpy.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41AC6A51297D818200D6FAA6 /* ViewControllerPresentationSpy.xcframework */; };
 		41E0768728A5C93500CFD890 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0768628A5C93500CFD890 /* Constants.swift */; };
 		E7A0FFCFA3C0751EA362EEA8 /* Pods_recipeSearch_recipeSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EEAACDCAFE3BD6F4EA03B9 /* Pods_recipeSearch_recipeSearchUITests.framework */; };
 		ED2DEAAD967AD6384C145A95 /* Pods_recipeSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391600D0C2DCDE1CD0F74636 /* Pods_recipeSearch.framework */; };
@@ -45,6 +53,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		41AC6A57297D818C00D6FAA6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				41AC6A58297D82D400D6FAA6 /* ViewControllerPresentationSpy.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1DDC8C36109360315D03E12B /* Pods-recipeSearch-recipeSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipeSearch-recipeSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-recipeSearch-recipeSearchUITests/Pods-recipeSearch-recipeSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		23EEAACDCAFE3BD6F4EA03B9 /* Pods_recipeSearch_recipeSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recipeSearch_recipeSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,10 +86,17 @@
 		41860D9E28A285F700BF92EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41860DA028A285F700BF92EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41860DA528A285F700BF92EC /* recipeSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipeSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41860DA928A285F700BF92EC /* recipeSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeSearchTests.swift; sourceTree = "<group>"; };
 		41860DAF28A285F700BF92EC /* recipeSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipeSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41860DB328A285F700BF92EC /* recipeSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeSearchUITests.swift; sourceTree = "<group>"; };
 		41860DB528A285F700BF92EC /* recipeSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		419B2191297CA9F70068838E /* DetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		41AC69A2297CB74000D6FAA6 /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
+		41AC69A4297CBB3900D6FAA6 /* RecipeTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCellTests.swift; sourceTree = "<group>"; };
+		41AC69E6297CC71300D6FAA6 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		41AC6A4F297D818200D6FAA6 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		41AC6A50297D818200D6FAA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		41AC6A51297D818200D6FAA6 /* ViewControllerPresentationSpy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ViewControllerPresentationSpy.xcframework; sourceTree = "<group>"; };
+		41AC6A52297D818200D6FAA6 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		41E0768628A5C93500CFD890 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5B895059F1A77F22D2520082 /* Pods-recipeSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipeSearch.release.xcconfig"; path = "Target Support Files/Pods-recipeSearch/Pods-recipeSearch.release.xcconfig"; sourceTree = "<group>"; };
 		861FA67E53FA28D1CB7BA64B /* Pods-recipeSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipeSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-recipeSearchTests/Pods-recipeSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED2DEAAD967AD6384C145A95 /* Pods_recipeSearch.framework in Frameworks */,
+				41AC6A55297D818200D6FAA6 /* ViewControllerPresentationSpy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +147,7 @@
 		41618A0A28A2890000B07674 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				41AC6A4E297D818200D6FAA6 /* ViewControllerPresentationSpy-6.1.0 */,
 				41618A1028A28A5800B07674 /* SearchViewController.swift */,
 				41618A2028A2D3EE00B07674 /* RecipeTableViewCell.swift */,
 				41618A1228A28A7300B07674 /* DetailsViewController.swift */,
@@ -216,7 +246,10 @@
 		41860DA828A285F700BF92EC /* recipeSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				41860DA928A285F700BF92EC /* recipeSearchTests.swift */,
+				419B2191297CA9F70068838E /* DetailsViewControllerTests.swift */,
+				41AC69A2297CB74000D6FAA6 /* SearchViewControllerTests.swift */,
+				41AC69A4297CBB3900D6FAA6 /* RecipeTableViewCellTests.swift */,
+				41AC69E6297CC71300D6FAA6 /* TestHelper.swift */,
 			);
 			path = recipeSearchTests;
 			sourceTree = "<group>";
@@ -228,6 +261,17 @@
 				41860DB528A285F700BF92EC /* recipeSearchUITestsLaunchTests.swift */,
 			);
 			path = recipeSearchUITests;
+			sourceTree = "<group>";
+		};
+		41AC6A4E297D818200D6FAA6 /* ViewControllerPresentationSpy-6.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				41AC6A4F297D818200D6FAA6 /* CHANGELOG.md */,
+				41AC6A50297D818200D6FAA6 /* README.md */,
+				41AC6A51297D818200D6FAA6 /* ViewControllerPresentationSpy.xcframework */,
+				41AC6A52297D818200D6FAA6 /* LICENSE.txt */,
+			);
+			path = "ViewControllerPresentationSpy-6.1.0";
 			sourceTree = "<group>";
 		};
 		41E0768828A67AD000CFD890 /* resorces */ = {
@@ -264,6 +308,7 @@
 				41860D8928A285F300BF92EC /* Frameworks */,
 				41860D8A28A285F300BF92EC /* Resources */,
 				16655D4310A57C36820A8A5A /* [CP] Embed Pods Frameworks */,
+				41AC6A57297D818C00D6FAA6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -328,6 +373,7 @@
 					};
 					41860DA428A285F700BF92EC = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 						TestTargetID = 41860D8B28A285F300BF92EC;
 					};
 					41860DAE28A285F700BF92EC = {
@@ -361,9 +407,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AC6A56297D818200D6FAA6 /* LICENSE.txt in Resources */,
 				41860D9F28A285F700BF92EC /* LaunchScreen.storyboard in Resources */,
 				41860D9C28A285F700BF92EC /* Assets.xcassets in Resources */,
+				41AC6A54297D818200D6FAA6 /* README.md in Resources */,
 				41860D9728A285F300BF92EC /* Main.storyboard in Resources */,
+				41AC6A53297D818200D6FAA6 /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +557,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41860DAA28A285F700BF92EC /* recipeSearchTests.swift in Sources */,
+				41AC69A3297CB74000D6FAA6 /* SearchViewControllerTests.swift in Sources */,
+				419B2192297CA9F70068838E /* DetailsViewControllerTests.swift in Sources */,
+				41AC69A5297CBB3900D6FAA6 /* RecipeTableViewCellTests.swift in Sources */,
+				41AC69E7297CC71300D6FAA6 /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,14 +784,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = soft.recipeSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recipeSearch.app/recipeSearch";
@@ -752,10 +811,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = soft.recipeSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

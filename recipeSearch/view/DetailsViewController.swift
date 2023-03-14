@@ -9,22 +9,25 @@ import UIKit
 import SafariServices
 
 class DetailsViewController: UIViewController {
-
-    @IBOutlet private weak var ingredientLinesTableView: UITableView!
-    @IBOutlet private weak var recipeImage: UIImageView!
-    @IBOutlet private weak var recipeTitle: UILabel!
+    @IBOutlet private(set) weak var ingredientLinesTableView: UITableView!
+    @IBOutlet private(set) weak var recipeImage: UIImageView!
+    @IBOutlet private(set) weak var recipeTitle: UILabel!
     private var ingredientLines: [String] = []
     var recipe: Recipe!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let testUIBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "shareplay"), style: .plain, target: self, action: #selector(self.shareRecipeURLBtn))
+        self.navigationItem.rightBarButtonItem  = testUIBarButtonItem
+        
         self.title = "Recipes Details"
         recipeImage.sd_setImage(with: URL(string: recipe.image), placeholderImage: UIImage(named: "recipeImage.png"))
         recipeTitle.text = recipe.title
         ingredientLines = recipe.ingredientLines
     }
 
-    @IBAction func shareRecipeURLBtn(_ sender: Any) {
+    @objc func shareRecipeURLBtn() {
         let textToShare = [recipe.url]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
